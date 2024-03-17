@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2012 Square, Inc. -->
+<resources>
+    <color name="deepColor">#0250CD</color>
+    <color name="lightColor">#3984FD</color>
+    <color name="soberColor">#AECBF8</color>
+    <color name="healthColor">#42D1B1</color>
+    <color name="observeColor">#FF6D2D</color>
+    <color name="seriousColor">#FF3D3D</color>
+    <color name="lowColor">#80FFFF</color>
+    <color name="yellowColor">#DFD500</color>
+    <color name="tipColor">#5662FF</color>
+</resources>

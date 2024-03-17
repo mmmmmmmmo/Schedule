@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/xm_text_size_m</item>
+        <item name="android:textColor">@color/xm_text_primary</item>
+        <item name="android:windowBackground">@color/xm_background</item>
+    </style>
+
+
+    <style name="BaseButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/xm_text_size_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/xm_padding_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:background">@drawable/btn_default_bg</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+
+
+    <!--item layout 内容样式-->
+    <style name="ItemContentText">
+        <item name="android:textSize">@dimen/xm_text_size_m</item>
+        <item name="android:textColor">@color/xm_text_secondary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginStart">@dimen/xm_padding_horizontal</item>
+    </style>
+
+    <!--item layout 标题样式-->
+    <style name="ItemTitleText">
+        <item name="android:textSize">@dimen/xm_text_size_l</item>
+        <item name="android:textColor">@color/xm_text_primary</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/item_title_min_width</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--Switch Button样式-->
+    <style name="XmSwitchButtonStyle">
+        <item name="android:textSize">@dimen/xm_text_size_m</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="kswBackColor">@color/xm_switch_back_color</item>
+        <item name="kswTextExtra">16.0dip</item>
+        <item name="kswTextThumbInset">4.0dip</item>
+        <item name="kswThumbColor">@color/white</item>
+    </style>
+
+    <!--常用的padding设置-->
+    <style name="XmPadding">
+        <item name="android:paddingTop">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/xm_padding_horizontal</item>
+    </style>
+
+    <!--toolbar-->
+    <style name="BaseToolBar">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="popupTheme">@style/XmPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="navigationIcon">@drawable/icon_back_white</item>
+    </style>
+
+    <style name="ItemContentText.RightIndicator">
+        <item name="android:gravity">start|center</item>
+        <item name="android:drawableRight">@drawable/icon_more</item>
+        <item name="android:drawablePadding">@dimen/xm_drawable_padding</item>
+    </style>
+
+    <style name="ItemContentText.RightIndicator.GravityRight" parent="@style/ItemContentText.RightIndicator">
+        <item name="android:gravity">end|center</item>
+    </style>
+    <style name="ItemContentText.GravityRight">
+        <item name="android:gravity">end|center</item>
+    </style>
+
+
+    <style name="XmPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/XmOverflowMenuStyle</item>
+    </style>
+
+    <style name="XmOverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/xm_text_size_l</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BaseToolBar.Light">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle.Light</item>
+        <item name="navigationIcon">@drawable/icon_back_black</item>
+    </style>
+
+    <style name="ToolbarTitle.Light">
+        <item name="android:textColor">#363636</item>
+    </style>
+
+    <!--文字风格-->
+    <style name="ItemText">
+        <item name="android:textSize">@dimen/xm_text_size_m</item>
+        <item name="android:textColor">@color/xm_text_primary</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/xm_drawable_padding</item>
+    </style>
+
+    <style name="ItemTextPadding" parent="ItemText">
+        <item name="android:paddingLeft">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingRight">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingBottom">@dimen/xm_padding_vertical</item>
+    </style>
+
+    <style name="ItemTextPadding.light">
+        <item name="android:textColor">@color/xm_text_primary_dark</item>
+    </style>
+
+    <style name="ItemTextPadding.Secondary">
+        <item name="android:textColor">@color/xm_text_secondary</item>
+    </style>
+
+
+    <style name="ItemText.tertiary">
+        <item name="android:textColor">@color/xm_text_tertiary</item>
+    </style>
+
+    <style name="ItemText.tertiary.Small">
+        <item name="android:textSize">@dimen/xm_text_size_s</item>
+    </style>
+
+    <style name="ItemTitleText.Flexible">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <!--分割线-->
+    <style name="XmDivisionLine">
+        <item name="android:background">@color/xm_divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/xm_divider_height</item>
+    </style>
+
+    <style name="BlockDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/xm_block_divider</item>
+        <item name="android:background">@color/xm_background</item>
+    </style>
+
+    <style name="XmDivisionLine.MarginStart">
+        <item name="android:layout_marginStart">@dimen/xm_padding_horizontal</item>
+    </style>
+
+    <style name="XmDivisionLine.Margin">
+        <item name="android:layout_marginStart">@dimen/xm_padding_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/xm_padding_horizontal</item>
+    </style>
+
+    <style name="XmDivisionLine.Vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="XmDivisionLine.Vertical.Margin">
+        <item name="android:layout_marginTop">@dimen/xm_padding_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/xm_padding_vertical</item>
+    </style>
+
+    <style name="bottomSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+</resources>

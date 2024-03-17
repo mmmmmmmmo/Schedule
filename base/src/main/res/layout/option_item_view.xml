@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:foreground="?selectableItemBackground"
+    android:minHeight="58dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="28.0dip"
+        android:layout_height="28.0dip"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginTop="@dimen/xm_padding_vertical"
+        android:layout_marginBottom="@dimen/xm_padding_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/indicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/xm_padding_horizontal"
+        android:src="@drawable/icon_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#6C6778" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/xm_padding_horizontal"
+        android:layout_marginEnd="@dimen/xm_padding_horizontal"
+        android:textColor="@color/xm_text_primary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        tools:text="消息" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8.0dip"
+        android:maxWidth="150dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toStartOf="@id/indicatorView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        tools:text="123"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/sub_imageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toStartOf="@id/indicatorView"
+        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+    <ImageView
+        android:id="@+id/update_dra"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/icon_red_circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/titleView"
+        app:layout_constraintStart_toEndOf="@id/titleView"
+        app:layout_constraintTop_toTopOf="@id/titleView" />
+
+    <TextView
+        android:id="@+id/update_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/update_dra"
+        app:layout_constraintEnd_toEndOf="@+id/update_dra"
+        app:layout_constraintStart_toStartOf="@id/update_dra"
+        app:layout_constraintTop_toTopOf="@id/update_dra" />
+
+
+    <View
+        android:id="@+id/divider"
+        style="@style/XmDivisionLine"
+        android:layout_width="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

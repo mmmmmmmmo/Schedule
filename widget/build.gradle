@@ -1,0 +1,99 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+    flavorDimensions 'version'
+    dataBinding {
+        enabled = true
+    }
+    productFlavors {
+        dev {}
+        rel {}
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation "androidx.test:runner:$rootProject.runnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
+
+    implementation project(path: ':base')
+
+    //引导页组件
+    api 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+
+    //自定义Tab,导航等
+    api 'com.github.hackware1993:MagicIndicator:1.6.0'
+
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+//直接导源码，修改
+//    api 'com.github.prolificinteractive:material-calendarview:2.0.0'
+
+    api 'com.kyleduo.switchbutton:library:2.0.0'
+    //RecyclerViewAdapter
+//    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    //视频框架
+//    api 'com.shuyu:gsyVideoPlayer-java:7.0.1'
+//    api 'com.shuyu:gsyVideoPlayer-armv7a:7.0.1'
+//    api 'com.shuyu:GSYVideoPlayer-exo2:7.0.1'
+//    api 'com.google.android.exoplayer:extension-okhttp:2.9.3'
+
+    //圆形view控件
+//    api 'com.github.jakob-grabner:Circle-Progress-View:1.4'
+
+    //选择答题结果库
+//    api 'com.hyman:flowlayout-lib:1.1.2'
+    //图表
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //评分库
+//    api 'com.hedgehog.ratingbar:app:1.1.2'
+
+    //时间滚轮
+    api 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
+
+    //implementation 'com.airbnb.android:lottie:3.3.0'
+
+    //日期选择控件
+//    api 'com.squareup:android-times-square:1.6.5'
+
+    //stateView
+//    api 'com.github.nukc.stateview:library:1.5.4'
+//    api 'com.github.nukc.stateview:animations:1.0.1'
+
+
+
+    //事件选择库
+    //api 'com.haibin:calendarview:3.6.6'
+//    api 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //字母索引库
+   // api 'me.yokeyword:indexablerecyclerview:1.3.0'
+
+    //侧滑删除库
+    //api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    //GIF
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+}

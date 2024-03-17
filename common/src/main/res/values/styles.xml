@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme" parent="BaseTheme" />
+
+    <style name="AppTheme" parent="Base.Theme" />
+
+    <!--button-->
+
+    <!--item layout样式，一般用于显示个人信息-->
+
+    <!--item layout 标题样式-->
+
+    <!--item layout 内容样式-->
+
+    <!--item layout提示语样式-->
+
+    <!--TabLayout样式-->
+
+    <!--搜索样式-->
+
+
+    <!--RadioButton-->
+
+    <!--CheckBox-->
+
+
+    <!--alertDialog样式-->
+
+    <style name="CommonToolBar" parent="BaseToolBar.Light">
+
+    </style>
+
+    <style name="CommonLightToolBar" parent="BaseToolBar.Light">
+        <item name="android:background">@drawable/toolbar_white_bg</item>
+    </style>
+    <style name="CommonWhiteToolBar" parent="BaseToolBar.Light">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!--item layout样式，一般用于显示个人信息-->
+    <style name="XmItemLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/item_layout_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="XmItemLayout.Padding" parent="@style/XmItemLayout">
+        <item name="android:paddingLeft">@dimen/xm_item_layout_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/xm_item_layout_padding_vertical</item>
+        <item name="android:paddingRight">@dimen/xm_item_layout_padding_horizontal</item>
+        <item name="android:paddingBottom">@dimen/xm_item_layout_padding_vertical</item>
+    </style>
+
+    <style name="XmItemLayout.Padding.vertical" parent="@style/XmItemLayout.Padding">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">start|center</item>
+    </style>
+
+    <style name="XmItemLayoutTitle">
+        <item name="android:textSize">@dimen/xm_text_size_l</item>
+        <item name="android:textColor">@color/xm_text_primary</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/xm_drawable_padding</item>
+        <item name="android:paddingStart">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/xm_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/xm_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/xm_padding_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="XmItemContentRight" parent="@style/ItemContentText.RightIndicator.GravityRight">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="XmLimitCountText">
+        <item name="android:textSize">@dimen/xm_text_size_m</item>
+        <item name="android:textColor">@color/xm_text_primary</item>
+        <item name="android:gravity">start|center|top</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <!--button-->
+    <style name="CommonButtonStyle" parent="@style/BaseButtonStyle">
+
+    </style>
+
+    <style name="CommonButtonStyle.Margin">
+        <item name="android:layout_marginLeft">@dimen/xm_padding_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/xm_padding_vertical</item>
+        <item name="android:layout_marginRight">@dimen/xm_padding_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/xm_padding_vertical</item>
+    </style>
+
+    <style name="CommonButtonTheme" parent="@style/BaseTheme">
+        <item name="android:buttonStyle">@style/CommonButtonStyle</item>
+        <item name="XmBtnCorners">@dimen/xm_button_corner</item>
+        <item name="XmBtnColor">@color/common_btn_color</item>
+        <item name="XmBtnPressed">@color/common_btn_pressed_color</item>
+        <item name="XmBtnDisable">@color/common_btn_disable_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CommonButtonTheme.Gray">
+        <item name="XmBtnColor">@color/btn_gray</item>
+        <item name="XmBtnPressed">@color/btn_gray</item>
+        <item name="XmBtnDisable">@color/btn_gray</item>
+    </style>
+
+    <style name="CommonButtonTheme.LightGray">
+        <item name="XmBtnColor">@color/btn_light_gray</item>
+        <item name="XmBtnPressed">@color/btn_light_gray</item>
+        <item name="XmBtnDisable">@color/btn_light_gray</item>
+    </style>
+
+    <style name="CommonButtonTheme.Red">
+        <item name="XmBtnColor">@color/btn_red</item>
+        <item name="XmBtnPressed">@color/btn_gray</item>
+        <item name="XmBtnDisable">@color/btn_gray</item>
+    </style>
+
+    <style name="CommonButtonTheme.Orange">
+        <item name="XmBtnColor">@color/btn_orange</item>
+        <item name="XmBtnPressed">@color/btn_gray</item>
+        <item name="XmBtnDisable">@color/btn_gray</item>
+    </style>
+
+    <style name="CommonButtonTheme.Orange.SmallCorners">
+        <item name="XmBtnCorners">5dp</item>
+    </style>
+
+
+    <style name="CommonButtonTheme.Blue">
+        <item name="XmBtnColor">#5D7AFF</item>
+        <item name="XmBtnPressed">@color/btn_gray</item>
+        <item name="XmBtnDisable">@color/btn_gray</item>
+    </style>
+
+    <style name="CommonButtonTheme.Blue.SmallCorners">
+        <item name="XmBtnCorners">@dimen/xm_button_corner_s</item>
+    </style>
+
+    <style name="CommonButtonTheme.Blue.LargeCorners">
+        <item name="XmBtnCorners">@dimen/xm_button_corner_l</item>
+    </style>
+
+    <style name="CommonButtonStyle.Blue">
+        <item name="android:theme">@style/CommonButtonTheme.Blue</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="CommonButtonStyle.Gray">
+        <item name="android:theme">@style/CommonButtonTheme.Gray</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="CommonButtonStyle.LightGray">
+        <item name="android:theme">@style/CommonButtonTheme.LightGray</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="CommonButtonStyle.Red">
+        <item name="android:theme">@style/CommonButtonTheme.Red</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+
+</resources>

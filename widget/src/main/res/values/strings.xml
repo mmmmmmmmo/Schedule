@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="guide_next_step">Next step</string>
+    <string name="guide_skip">jump over</string>
+
+    <string name="xm_loading">Trying to load</string>
+    <string name="xm_loading_retry">Loading failed, click to try again</string>
+    <string name="xm_no_data">No data</string>
+
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+
+</resources>

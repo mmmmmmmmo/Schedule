@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#A3C6FE</color>
+    <color name="colorBackground">#F7F3E5</color>
+    <color name="colorPrimaryDark">#A3C6FE</color>
+    <color name="colorAccent">#A3C6FE</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+    <color name="xm_divider">#ECEEEF</color>
+
+    <!--文字颜色-->
+    <color name="xm_text_primary">#333333</color>
+    <color name="xm_text_secondary">#ACACAC</color>
+    <color name="xm_text_tertiary">#CBCACA</color>
+    <color name="xm_text_accent">@color/colorAccent</color>
+    <color name="xm_text_error">#D81B60</color>
+
+
+    <color name="xm_tertiary">#F8F8FF</color>
+    <color name="tertiary">#F2F2F2</color>
+
+    <color name="xm_text_primary_dark">#333333</color>
+    <color name="xm_text_secondary_dark">#888888</color>
+
+    <color name="xm_text_primary_light">#ffffff</color>
+    <color name="xm_text_secondary_light">#CBCACA</color>
+
+    <color name="xm_background">#F2F1F6</color>
+
+
+    <color name="white_text">#FFF</color>
+    <color name="black_text">#333333</color>
+
+
+    <color name="black_background">#2f3336</color>
+    <color name="black_content">#474c4f</color>
+    <color name="text_black">#B6B6B6</color>
+    <color name="back_button">#59D5BD</color>
+    <color name="feed_back">#F5FAFF</color>
+    <color name="left_set_back">#474C4F</color>
+    <color name="about_gray">#CCCCCC</color>
+
+    <color name="color_splash">#83B0FF</color>
+    <color name="red">#F30B0B</color>
+</resources>

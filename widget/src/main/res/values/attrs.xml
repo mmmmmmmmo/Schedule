@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseRefreshView">
+        <attr name="rrvEmptyText" format="string" />
+        <attr name="rrvEmptyLayout" format="reference" />
+        <attr name="rrvLoadingText" format="string" />
+        <attr name="rrvLoadingLayout" format="reference" />
+        <attr name="rrvRetryText" format="string" />
+        <attr name="rrvRetryLayout" format="reference" />
+
+        <attr name="rrvEnableLoadMore" format="boolean" />
+        <attr name="rrvEnableRefresh" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="XmStateView">
+        <attr name="emptyResource" format="reference" />
+        <attr name="emptyText" format="reference" />
+        <attr name="retryResource" format="reference" />
+        <attr name="retryText" format="reference" />
+        <attr name="loadingResource" format="reference" />
+        <attr name="loadingText" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background" />
+        <attr name="tsquare_dividerColor" format="color" />
+        <attr name="tsquare_dayBackground" format="reference" />
+        <attr name="tsquare_dayTextColor" format="color" />
+        <attr name="tsquare_titleTextStyle" format="reference" />
+        <attr name="tsquare_displayHeader" format="boolean" />
+        <attr name="tsquare_displayDayNamesHeaderRow" format="boolean" />
+        <attr name="tsquare_displayAlwaysDigitNumbers" format="boolean" />
+        <attr name="tsquare_headerTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="tsquare_state_selectable" format="boolean" />
+        <attr name="tsquare_state_current_month" format="boolean" />
+        <attr name="tsquare_state_today" format="boolean" />
+        <attr name="tsquare_state_range_first" format="boolean" />
+        <attr name="tsquare_state_range_middle" format="boolean" />
+        <attr name="tsquare_state_range_last" format="boolean" />
+        <attr name="tsquare_state_highlighted" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+        <attr name="hourHeight" format="dimension" />
+        <attr name="minHourHeight" format="dimension" />
+        <attr name="maxDayWidth" format="dimension" />
+        <attr name="maxHourHeight" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="eventTextSize" format="dimension" />
+        <attr name="headerColumnPadding" format="dimension" />
+        <attr name="headerRowPadding" format="dimension" />
+        <attr name="columnGap" format="dimension" />
+        <attr name="headerColumnTextColor" format="color" />
+        <attr name="noOfVisibleDays" format="integer" />
+        <attr name="showFirstDayOfWeekFirst" format="boolean" />
+        <attr name="headerRowBackgroundColor" format="color" />
+        <attr name="dayBackgroundColor" format="color" />
+        <attr name="hourSeparatorColor" format="color" />
+        <attr name="todayBackgroundColor" format="color" />
+        <attr name="todayHeaderTextColor" format="color" />
+        <attr name="hourSeparatorHeight" format="dimension" />
+        <attr name="eventTextColor" format="color" />
+        <attr name="eventPadding" format="dimension" />
+        <attr name="headerColumnBackground" format="color" />
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1" />
+            <enum name="length_long" value="2" />
+        </attr>
+        <attr name="overlappingEventGap" format="dimension" />
+        <attr name="eventMarginVertical" format="dimension" />
+        <attr name="xScrollingSpeed" format="float" />
+        <attr name="eventCornerRadius" format="dimension" />
+        <attr name="showDistinctPastFutureColor" format="boolean" />
+        <attr name="showDistinctWeekendColor" format="boolean" />
+        <attr name="futureBackgroundColor" format="color" />
+        <attr name="pastBackgroundColor" format="color" />
+        <attr name="futureWeekendBackgroundColor" format="color" />
+        <attr name="pastWeekendBackgroundColor" format="color" />
+        <attr name="showNowLine" format="boolean" />
+        <attr name="nowLineColor" format="color" />
+        <attr name="nowLineThickness" format="dimension" />
+        <attr name="horizontalFlingEnabled" format="boolean" />
+        <attr name="verticalFlingEnabled" format="boolean" />
+        <attr name="allDayEventHeight" format="dimension" />
+        <attr name="scrollDuration" format="integer" />
+    </declare-styleable>
+
+
+
+
+
+
+
+    <declare-styleable name="XmRecyclerView">
+        <attr name="xmMaxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="wheelview_textSize" format="dimension"/>
+        <attr name="wheelview_textColorOut" format="color"/>
+        <attr name="wheelview_textColorCenter" format="color"/>
+        <attr name="wheelview_dividerColor" format="color"/>
+        <attr name="wheelview_dividerWidth" format="dimension"/>
+        <attr name="wheelview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MaterialCalendarView">
+
+        <attr name="mcv_dateTextAppearance" format="reference"/>
+        <attr name="mcv_weekDayTextAppearance" format="reference"/>
+        <attr name="mcv_headerTextAppearance" format="reference"/>
+
+        <attr name="mcv_leftArrow" format="reference"/>
+        <attr name="mcv_rightArrow" format="reference"/>
+        <attr name="mcv_selectionColor" format="color"/>
+
+        <attr name="mcv_showOtherDates" format="integer">
+            <flag name="none" value="0"/>
+            <flag name="other_months" value="1"/>
+            <flag name="out_of_range" value="2"/>
+            <flag name="decorated_disabled" value="4"/>
+            <flag name="defaults" value="4"/>
+            <flag name="all" value="7"/>
+        </attr>
+
+        <attr name="mcv_allowClickDaysOutsideCurrentMonth" format="boolean"/>
+        <attr name="mcv_showWeekDays" format="boolean"/>
+
+        <attr name="mcv_weekDayLabels" format="reference"/>
+        <attr name="mcv_monthLabels" format="reference"/>
+
+        <!-- We want to accept match_parent but not wrap_content. It'd be better if we could
+        point to the real match_parent constant, but since it hasn't change since API 1,
+        I think it's safe to hardcode it-->
+        <attr name="mcv_tileSize" format="dimension">
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="mcv_tileHeight" format="dimension">
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="mcv_tileWidth" format="dimension">
+            <enum name="match_parent" value="-1"/>
+        </attr>
+
+        <attr name="mcv_firstDayOfWeek" format="enum">
+            <enum name="monday" value="1"/>
+            <enum name="tuesday" value="2"/>
+            <enum name="wednesday" value="3"/>
+            <enum name="thursday" value="4"/>
+            <enum name="friday" value="5"/>
+            <enum name="saturday" value="6"/>
+            <enum name="sunday" value="7"/>
+        </attr>
+
+        <attr name="mcv_calendarMode" format="enum">
+            <enum name="month" value="0"/>
+            <enum name="week" value="1"/>
+        </attr>
+
+        <attr name="mcv_selectionMode" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="single" value="1"/>
+            <enum name="multiple" value="2"/>
+            <enum name="range" value="3"/>
+        </attr>
+
+        <attr name="mcv_titleAnimationOrientation" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

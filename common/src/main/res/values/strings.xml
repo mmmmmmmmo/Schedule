@@ -1,0 +1,89 @@
+<resources>
+    <string name="netError">Network Error</string>
+    <string name="unKnowError">Error, please try again</string>
+    <string name="miss_parameter">Missing parameters</string>
+    <string name="server_error">Server exception</string>
+    <!--用于tools测试单行或多行数据-->
+
+    <string name="app_Storage_Permission">Open the storage space permission in Settings-Application-Bestand-Permission to use the function normally.</string>
+
+    <string name="permission_tip">Permission Tip</string>
+
+    <string name="token_error_tips">The account is logged in other terminals, please log in again！</string>
+
+    <string name="sd_card_does_not_exist">"Please insert the SD card before taking pictures"</string>
+    <string name="app_camera_Permission">Enable the camera permission in Settings-Application-Permissions to use normal functions such as taking pictures and scanning.</string>
+
+    <string name="pair_new">Pair a new one</string>
+    <string name="get_adhesives">Purchase adhesives</string>
+    <string name="pair_new_tip"> The app will unpair from  your current device,and pair with the nearest device</string>
+    <string name="updateing">Checking for updates…</string>
+    <string name="update_tip">The version is too low. You need to upgrade to the latest version for better experience!</string>
+    <string name="update_tip2">The latest version is ready for you，Install now？</string>
+    <string name="update_title">Version Update</string>
+    <string name="later">Later</string>
+    <string name="update">Update</string>
+    <string name="downloading">Downloading %d </string>
+    <string name="logouttip">Sure you want to log out?</string>
+    <string name="log_out">Log out</string>
+    <string name="feedback_successfully">Feedback successfully</string>
+    <string name="feedBack_tip">Thanks for your advice,We will deal with your feedback seriously and improve it as soon as possible</string>
+
+    <string name="new_version">New Version</string>
+
+    <string name="sync_time">Last synced-%s at %s</string>
+    <string name="testing_failed">Testing failed</string>
+    <string name="testing_tip">Please correct wear the device and keep still</string>
+    <string name="testing_no">No more tests</string>
+    <string name="testing_continue">Retest</string>
+    <string name="gender_select">Please select gender</string>
+    <string name="sure">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_sure">Are you sure to clear all messages?</string>
+
+<!--    sdsd-->
+    <string name="add_contact">Add Contact</string>
+    <string name="open_title">开启</string>
+    <string name="open_intercept">开启拦截陌生来电</string>
+    <string name="close_intercept">关闭拦截陌生来电</string>
+    <string name="close_intercept_tip">关闭后任何人都可以打电话</string>
+    <string name="intercept_toast">开启后只有手表电话电话簿联系人才能打通电话给手表\n
+        注意:\n1.为了让手表能够识别来电号码，需要您为手表中的SIM卡开通【来电显示】功能。\n
+    2.如果您的号码和手表手机号码是亲情号关系，请在联系人中修改添加亲情号，否则您打电话给手表会被拦截</string>
+
+    <string name="voice">[语音]</string>
+    <string name="text">[文本]</string>
+    <string name="picture">[表情]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    
+    <string name="seartch_toast"> 随时随地知道设备的位置\n
+        1.点击找手表按钮\n
+        2.在弹窗中点击:立即找手表\n
+        3.指令发送成功\n
+        4.手表收到指令后响铃</string>
+    
+    <string name="migration_toast1">
+        确认将
+    </string>
+
+    <string name="update_now">Update Now</string>
+    <string name="migration_toast2">
+        的数据迁移到测试表
+    </string>
+
+    <string name="migration_toast3">
+        上吗？\n \n \n监护人：同步复制\n围栏数据：同步复制\n聊天好友：同步复制\n通讯录：同步复制\nSOS：同步复制\n电话拦截：同步复制\n课程表：同步复制\n上课禁用：同步复制\n定时开关机：同步复制\n闹钟：同步复制
+    </string>
+    
+    <string name="migration_confirm">您这次操作会将新手表的全部信息抹除，请您再次确认</string>
+    <string name="update_contact_toast">短号/亲情号是指手表号码和家长手机号码在运营商办理的家庭网短
+号，若未办理则无需填写，此处填写手机号码对应的家庭网短号，
+此短号会同步给手表，手表拨号时，优先使用此短号</string>
+    <string name="sos">SOS</string>
+    <string name="transfer_integral_toast">• 积分将实时转入手表账户，无法退还 \n• 积分可用于应用商城购买应用、主题或表盘</string>
+    <string name="schedule_back_toast">确定直接退出不保存修改？</string>
+    <string name="contact_toast">手机在添加联系人后，需要向服务器传输数据。数据传输完成后，手表需要拉取服务端上的数据同步，这个过程可能存在延迟</string>
+
+    <string name="sos_tip">设备使用SOS功能时，会依次拨打下列号码。可设置3个号码，当第 一个号码未接通时，将会继续拨打第二个号码，依次类推</string>
+</resources>

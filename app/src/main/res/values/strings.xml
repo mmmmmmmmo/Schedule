@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GPTProj</string>
+    <string name="tab_home">创建</string>
+    <string name="tab_mine">日历</string>
+    <string name="tab_location">测试</string>
+    <string name="tab_chat">事件</string>
+    <string-array name="week_array">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+</resources>

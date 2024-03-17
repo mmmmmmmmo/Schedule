@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_layout_bg">#FFFFFF</color>
+    <color name="fee_type_many_color">#E92828</color>
+
+    <color name="common_btn_color">@color/colorPrimary</color>
+    <color name="common_btn_disable_color">@color/colordisable</color>
+    <color name="common_btn_pressed_color">@color/colorPrimaryDark</color>
+
+    <color name="common_btn_color_green">#8FD688</color>
+    <color name="common_btn_disable_color_green">#8FD688</color>
+    <color name="common_btn_pressed_color_green">#8FD688</color>
+    <color name="color_363636">#363636</color>
+    <color name="btn_gray">#FFB2B2B2</color>
+    <color name="btn_light_gray">#F0F0F4</color>
+    <color name="btn_orange">#FF6D2D</color>
+    <color name="btn_red">#FF4444</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_testing_failed">#FF4848</color>
+    <color name="color_deep_gray">#9A9999</color>
+
+    <color name="base_blue">#5D7AFF</color>
+</resources>

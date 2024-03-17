@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <attr name="XmBtnDisable" format="color" />
+    <attr name="XmBtnPressed" format="color" />
+    <attr name="XmBtnColor" format="color" />
+    <attr name="XmBtnCorners" format="dimension" />
+
+    <declare-styleable name="OptionItemView">
+        <attr name="oiv_icon" format="reference" />
+        <attr name="oiv_subicon" format="reference" />
+        <attr name="oiv_icon_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="oiv_title" format="string" />
+        <attr name="oiv_subtitle" format="string" />
+        <attr name="oiv_subtitlehint" format="string" />
+        <attr name="oiv_arrow" format="boolean" />
+        <attr name="oiv_divider" format="boolean" />
+        <attr name="oiv_red" format="boolean" />
+        <attr name="oiv_location" format="enum">
+            <enum name="single" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="OptionLine">
+        <attr name="ol_location" format="enum">
+            <enum name="single" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+        <attr name="ol_type" format="enum">
+            <!--副标题样式-->
+            <enum name="normal" value="1" />
+            <!--头像样式-->
+            <enum name="avatar" value="2" />
+        </attr>
+        <attr name="ol_arrow" format="boolean" />
+        <attr name="ol_title" format="string" />
+        <attr name="ol_subtitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="XmEditText">
+        <attr name="limitLength" format="integer" />
+        <attr name="showCurLength" format="boolean" />
+        <attr name="drawLimit" format="boolean" />
+    </declare-styleable>
+
+</resources>

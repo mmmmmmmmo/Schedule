@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xm_button_corner">8dp</dimen>
+    <dimen name="xm_button_corner_s">5dp</dimen>
+    <dimen name="xm_button_corner_l">20dp</dimen>
+
+</resources>

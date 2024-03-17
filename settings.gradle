@@ -1,0 +1,43 @@
+buildscript {
+    ext.kotlin_version = "1.6.10"
+    apply from: 'versions.gradle'
+
+    pluginManagement {
+        repositories {
+            maven { url 'https://developer.huawei.com/repo/' }
+            maven {
+                allowInsecureProtocol = true
+                url 'https://maven.aliyun.com/nexus/content/groups/public'
+            }
+            maven {
+                allowInsecureProtocol = true
+                url 'https://maven.aliyun.com/nexus/content/repositories/google'
+            }
+            maven { url 'https://172.168.1.17:8088/repository/android-maven-public' }
+            google()
+            mavenCentral()
+            maven { url 'https://jitpack.io' }
+            maven { url 'https://repo1.maven.org/maven2/' }
+        }
+    }
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+
+            maven { url 'https://developer.huawei.com/repo/' }
+            maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+            maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+            maven { url 'https://172.168.1.17:8088/repository/android-maven-public' }
+            google()
+            mavenCentral()
+            maven { url 'https://jitpack.io' }
+            maven { url 'https://repo1.maven.org/maven2/' }
+        }
+    }
+
+    rootProject.name = "GPTProj"
+    include ':app'
+    include ':base'
+    include ':common'
+    include ':widget'
+}

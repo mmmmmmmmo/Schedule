@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xpopup_round_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/clear_sure"
+        android:textColor="@color/color_363636"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_cancel_gray"
+            android:text="@string/cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#999999"
+            android:textSize="16sp"
+             />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_height="40dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/bg_ok_blue_8dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/sure"
+            android:textSize="16sp"
+             />
+
+    </LinearLayout>
+</LinearLayout>
+
