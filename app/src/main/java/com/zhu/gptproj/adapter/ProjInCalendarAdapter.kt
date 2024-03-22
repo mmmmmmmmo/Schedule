@@ -24,8 +24,12 @@ class ProjInCalendarAdapter :
     init {
         val list= arrayListOf<ProjInCalendar>()
         list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
+        list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
+        list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
+        list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
+        list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
+        list.add(ProjInCalendar(0,"sdsds","sdsdsdsd"))
         this.submitList(list)
-        //this.notifyDataSetChanged()
     }
 
     //构造器-普通目录

@@ -23,10 +23,10 @@ class CalendarFragment : BaseFragment<FragmentCalendarBinding>(){
 
     override fun initView() {
         super.initView()
-        projAdapter= ProjInCalendarAdapter()
-        dataBinding.calendarRecycler.adapter =projAdapter.also {
-            if (it==null){
-                projAdapter=ProjInCalendarAdapter()
+        projAdapter = ProjInCalendarAdapter()
+        dataBinding.calendarRecycler.adapter = projAdapter.also {
+            if (it == null) {
+                projAdapter = ProjInCalendarAdapter()
             }
         }
 

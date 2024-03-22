@@ -17,13 +17,21 @@ import com.zhu.gptproj.widget.DragTV
  */
 class HomeFragment (override val layoutId: Int = R.layout.fragment_home): BaseFragment<FragmentHomeBinding>(){
 
+    override fun initView() {
+        super.initView()
+
+    }
+
     override fun initListener() {
         super.initListener()
         dataBinding.btnConfirm.setOnClickListener{
             val params= RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT)
             params.topMargin=100
             params.leftMargin=100
-            dataBinding.thingPool.addView(object :DragTV(context,0,dataBinding.etInput.text.toString()){},params)
+
+            val newDragView=DragTV(context,0,dataBinding.etInput.text.toString())
+
+            dataBinding.thingPool.addView(newDragView,params)
             dataBinding.etInput.text=null
         }
     }
