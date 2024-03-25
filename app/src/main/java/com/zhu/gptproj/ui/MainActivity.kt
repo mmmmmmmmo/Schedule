@@ -3,6 +3,7 @@ package com.zhu.gptproj.ui
 import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import com.moon.libbase.base.BaseActivity
+import com.moon.libbase.utils.ui.WindowUtils
 import com.moon.libbase.widget.adapter.PagerItem
 import com.moon.libbase.widget.adapter.ViewPagerAdapter
 import com.moon.libcommon.base.BaseVMActivity
@@ -25,6 +26,7 @@ class MainActivity(override val layoutId: Int = R.layout.activity_main) : BaseAc
     override fun initView() {
         super.initView()
         adapter = ViewPagerAdapter(supportFragmentManager)
+        WindowUtils.setLightStatusBar(window)
         createFragment()
         dataBinding.bottomNavigation.inflateMenu(R.menu.nav_bottom)
         dataBinding.bottomNavigation.itemIconTintList = null

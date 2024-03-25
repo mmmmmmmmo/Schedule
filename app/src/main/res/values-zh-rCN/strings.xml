@@ -4,6 +4,7 @@
     <string name="tab_mine">日历</string>
     <string name="tab_location">测试</string>
     <string name="tab_chat">事件</string>
+
     <string-array name="week_array">
         <item>Mon</item>
         <item>Tue</item>
@@ -12,5 +13,13 @@
         <item>Fri</item>
         <item>Sat</item>
         <item>Sun</item>
+    </string-array>
+
+    <string-array name="home_box_list">
+        <item>5分钟</item>
+        <item>日程</item>
+        <item>项目</item>
+        <item>将来某天</item>
+        <item>委托</item>
     </string-array>
 </resources>

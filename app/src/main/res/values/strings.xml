@@ -13,4 +13,12 @@
         <item>Sat</item>
         <item>Sun</item>
     </string-array>
+
+    <string-array name="home_box_list">
+        <item>5分钟</item>
+        <item>日程</item>
+        <item>项目</item>
+        <item>将来某天</item>
+        <item>委托</item>
+    </string-array>
 </resources>
